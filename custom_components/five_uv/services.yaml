@@ -29,6 +29,6 @@ set_sterilization_time:
       description: Name of the five uv light entity.
       example: 'light.five_uv_light'
     minutes:
-      description: Sterilization, between 5 and 45.
+      description: Sterilization time, between 5 and 45.
       example: 30
 

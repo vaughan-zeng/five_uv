@@ -1,9 +1,4 @@
 {
   "name": "miio Five UV Light",
-  "content_in_root": false,
-  "domains": ["light"],
-  "homeassistant": "0.99.9",
   "render_readme": true,
-  "persistent_directory": "userfiles",
-  "iot_class": "local_polling"
 }

@@ -1,0 +1,34 @@
+set_child_lock_on:
+  description: Turn the UV light child lock on.
+  fields:
+    entity_id:
+      description: Name of the five uv light entity.
+      example: 'light.five_uv_light'
+set_child_lock_off:
+  description: Turn the UV light child lock off.
+  fields:
+    entity_id:
+      description: Name of the five uv light entity.
+      example: 'light.five_uv_light'
+set_disable_radar_on:
+  description: Turn the UV light disable radar on.
+  fields:
+    entity_id:
+      description: Name of the five uv light entity.
+      example: 'light.five_uv_light'
+set_disable_radar_off:
+  description: Turn the UV light disable radar off.
+  fields:
+    entity_id:
+      description: Name of the five uv light entity.
+      example: 'light.five_uv_light'
+set_sterilization_time:
+  description: Set the sterilization time.
+  fields:
+    entity_id:
+      description: Name of the five uv light entity.
+      example: 'light.five_uv_light'
+    minutes:
+      description: Sterilization, between 5 and 45.
+      example: 30
+

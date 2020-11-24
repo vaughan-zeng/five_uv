@@ -24,6 +24,9 @@ Supported models: `uvfive.s_lamp.slmap2`.
   - UV Status (off, starting, sterilizing)
   - model
 
+# Install
+You can install this custom component by adding this repository (https://github.com/vaughan-zeng/five_uv) to HACS in the settings menu of HACS first. You will find the custom component in the integration menu afterwards, look for 'miio Five UV Light'. Alternatively, you can install it manually by copying the custom_component folder to your Home Assistant configuration folder.
+
 # Setup
 
 ```

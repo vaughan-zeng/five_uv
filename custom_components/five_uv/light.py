@@ -41,11 +41,11 @@ PLATFORM_SCHEMA = PLATFORM_SCHEMA.extend(
 )
 
 ATTR_SIID_21 = 'siid_21'
-ATTR_UV_STATUS = 'UV Status'
-ATTR_STERILIZATION_TIME = 'Sterilization time'
-ATTR_STOP_COUNTDOWN = 'Stop countdown'
-ATTR_CHILD_LOCK = 'Child lock'
-ATTR_DISABLE_RADAR = 'Disable radar'
+ATTR_UV_STATUS = 'uv_status'
+ATTR_STERILIZATION_TIME = 'sterilization_time'
+ATTR_STOP_COUNTDOWN = 'stop_countdown'
+ATTR_CHILD_LOCK = 'child_lock'
+ATTR_DISABLE_RADAR = 'Disable_radar'
 ATTR_MODEL = "model"
 ATTR_MINUTES = 'minutes'
 

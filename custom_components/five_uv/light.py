@@ -9,7 +9,7 @@ from miio import (  # pylint: disable=import-error
 )
 import voluptuous as vol
 
-from homeassistant.components.light import PLATFORM_SCHEMA, lightEntity
+from homeassistant.components.light import PLATFORM_SCHEMA, LightEntity
 from homeassistant.const import (
     ATTR_ENTITY_ID,
     CONF_HOST,
@@ -41,13 +41,13 @@ PLATFORM_SCHEMA = PLATFORM_SCHEMA.extend(
 )
 
 ATTR_SIID_21 = 'siid_21'
-ATTR_UV_STATUS = 'uv_status'
-ATTR_STERILIZATION_TIME = 'sterilization_time'
-ATTR_STOP_COUNTDOWN = 'stop_countdown'
-ATTR_CHILD_LOCK = 'child_lock'
-ATTR_DISABLE_RADAR = 'disable_radar'
+ATTR_UV_STATUS = 'UV Status'
+ATTR_STERILIZATION_TIME = 'Sterilization time'
+ATTR_STOP_COUNTDOWN = 'Stop countdown'
+ATTR_CHILD_LOCK = 'Child lock'
+ATTR_DISABLE_RADAR = 'Disable radar'
 ATTR_MODEL = "model"
-ATTR_STERILIZATION_TIME = 'minutes'
+ATTR_MINUTES = 'minutes'
 
 SUCCESS = ["ok"]
 
@@ -60,7 +60,7 @@ SERVICE_SET_DISABLE_RADAR_OFF = "set_disable_radar_off"
 SERVICE_SCHEMA = vol.Schema({vol.Optional(ATTR_ENTITY_ID): cv.entity_ids})
 
 SERVICE_SCHEMA_STERILIZATION_TIME = SERVICE_SCHEMA.extend(
-    {vol.Required(ATTR_STERILIZATION_TIME, default=30): vol.All(int, vol.Range(min=5, max=45))}
+    {vol.Required(ATTR_MINUTES, default=30): vol.All(int, vol.Range(min=5, max=45))}
 )
 
 SERVICE_TO_METHOD = {
@@ -168,12 +168,12 @@ class Five_UV_Light(LightEntity):
         self._available = False
         self._state = None
         self._state_attrs = {
-            ATTR_SIID_21: None,
-            ATTR_UV_STATUS: None,
             ATTR_STERILIZATION_TIME: None,
             ATTR_STOP_COUNTDOWN: None,
             ATTR_CHILD_LOCK: None,
             ATTR_DISABLE_RADAR: None,
+            ATTR_SIID_21: None,
+            ATTR_UV_STATUS: None,
             ATTR_MODEL: self._model}
 
         self._skip_update = False

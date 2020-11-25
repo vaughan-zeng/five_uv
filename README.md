@@ -24,6 +24,9 @@ Supported models: `uvfive.s_lamp.slmap2`.
   - UV Status (off, starting, sterilizing)
   - model
 
+# Install
+You can install it manually by copying the custom_component folder to your Home Assistant configuration folder.
+
 # Setup
 
 ```

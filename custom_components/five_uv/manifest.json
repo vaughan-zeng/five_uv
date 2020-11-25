@@ -9,7 +9,5 @@
     "python-miio>=0.5.3"
   ],
   "dependencies": [],
-  "codeowners": [
-    "@von"
-  ]
+  "codeowners": ["@von"]
 }
